@@ -1,0 +1,7 @@
+sonar:
+  projectKey: drgs_spring-boot-library-app-1
+  hostname: sonarcloud.io  
+fixer:
+  hostname: localhost
+  port: 8080
+ 
