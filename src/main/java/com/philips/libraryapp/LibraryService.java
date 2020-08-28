@@ -44,6 +44,9 @@ public class LibraryService {
 		if (bookList.size() > 0) {
 			return bookList;
 		}
+		if (bookList.size() == 0) {
+			System.out.println("hello");	
+		}
 		return new ArrayList<>();
 	}
 
