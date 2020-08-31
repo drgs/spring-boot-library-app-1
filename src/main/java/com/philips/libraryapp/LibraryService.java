@@ -22,7 +22,11 @@ public class LibraryService {
 		if (bookName.equals("foo")) {
 			return "We do not accept books with this title";
 		}
-
+		
+		if (bookName.equals("bar")) {
+			return "We do not accept books with this title";
+		}
+		
 		bookList.add(bookName);
 		return "Book with title" + bookName + "has been added";		
 	}
