@@ -23,7 +23,7 @@ public class LibraryService {
 			return "We do not accept books with this title";
 		}
 		
-		if (bookName.equals("bar")) {
+		if ("bar".equals(bookName)) {
 			return "We do not accept books with this title";
 		}
 		
