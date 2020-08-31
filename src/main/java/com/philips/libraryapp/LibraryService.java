@@ -52,7 +52,8 @@ public class LibraryService {
 		 * TODO: IMPLEMENT THIS
 		 * 
 		 * Requirements:
-		 * 1. Delete the book bookName iff bookList has size > 0. Use the method bookList.size()
+		 * 1. Delete the book given as parameter (bookName) iff bookList has size > 0. Use the method bookList.size()
+		 * 2. Add a local variable of type boolean and name it "bookRemoved"
 		 * 2. If the book is deleted, return the string "Book removed successfully"
 		 * 3. if the book is not deleted, return the string "Could not remove book"
 		 */
