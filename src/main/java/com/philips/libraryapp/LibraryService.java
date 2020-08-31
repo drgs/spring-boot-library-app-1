@@ -59,7 +59,7 @@ public class LibraryService {
 		 */
 
 
-		 if (bookList.size() > 0){
+		 if (!bookList.isEmpty()){
 			 return "Book removed successfully";
 		 }
 		return "Could not remove book";
