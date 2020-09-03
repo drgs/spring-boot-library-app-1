@@ -59,7 +59,7 @@ public class LibraryService {
 		 */
 		String retval = "Could not remove book";
 
-		if (bookList.size() > 0) {
+		if (!bookList.isEmpty()) {
 			if ( bookList.remove(bookName) ) {
 				retval = "Book removed successfully";
 			}
