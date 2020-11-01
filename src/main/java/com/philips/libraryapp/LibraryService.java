@@ -62,10 +62,10 @@ public class LibraryService {
 		 if(bookList.size() > 0){
 		 	bookList.remove(bookName);
 			return "Book removed successfully";
-			} else {
-			return "Could not remove book";
 			}
-		}
+		 else {
+	                return "Could not remove book";
+		 }
 		return null;
 	}
 }
