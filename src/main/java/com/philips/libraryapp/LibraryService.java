@@ -16,7 +16,7 @@ public class LibraryService {
 
 		actionLogger.log("Adding book: " + bookName);
 
-		if (bookName.equals("foo")) {
+		if ("foo".equals(bookName)) {
 			return "We do not accept books with this title";
 		}
 
