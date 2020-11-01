@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class LibraryService {
 	private List<String> bookList = new ArrayList<>();
-	
+
 	@SuppressWarnings({"java:S1104"})
 	public static ActionLogger actionLogger = new ActionLogger();
-	
+
 	public String addBook(String bookName) {
 		int bookNumOfPages;
 		boolean bookIsNonfiction, languageIsEnglish;
@@ -24,22 +24,22 @@ public class LibraryService {
 		}
 
 		bookList.add(bookName);
-		return "Book with title" + bookName + "has been added";		
+		return "Book with title" + bookName + "has been added";
 	}
 
 //	public String checkStringEqualsFoo(String inputString) {
-//		return inputString.equals("foo") ? 
-//				"Input string matches foo" : 
+//		return inputString.equals("foo") ?
+//				"Input string matches foo" :
 //					"Input string does not match foo";
 //	}
 
 //	public String checkStringEqualsFoo(String inputString) {
-//		return inputString.equals("foo") ? 
-//				"Input string matches foo" : 
+//		return inputString.equals("foo") ?
+//				"Input string matches foo" :
 //					"Input string does not match foo";
 //	}
-//	
-	
+//
+
 	public List<String> getAllBooks() {
 		if (bookList.size() > 0) {
 			return bookList;
@@ -50,13 +50,23 @@ public class LibraryService {
 	public String removeBook(String bookName) {
 		/*
 		 * TODO: IMPLEMENT THIS
-		 * 
+		 *
 		 * Requirements:
 		 * 1. Delete the book given as parameter (bookName) iff bookList has size > 0. Use the method bookList.size()
 		 * 2. Add a local variable of type boolean and name it "bookRemoved". This variable will remain temporarily unused.
 		 * 2. If the book is deleted, return the string "Book removed successfully"
 		 * 3. if the book is not deleted, return the string "Could not remove book"
 		 */
+		 boolean bookRemoved = false;
+
+		 if(bookList.size() > 0){
+		 	if(bookList.remove(bookName)){
+				return "Book removed successfully";
+			} else {
+				return "Could not remove book";
+			}
+		}
+
 		return null;
 	}
 }
