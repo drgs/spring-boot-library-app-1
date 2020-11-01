@@ -57,6 +57,15 @@ public class LibraryService {
 		 * 2. If the book is deleted, return the string "Book removed successfully"
 		 * 3. if the book is not deleted, return the string "Could not remove book"
 		 */
+		 boolean bookRemoved = false;
+
+		 if(bookList.size() > 0){
+		 	if(bookList.remove(bookName)){
+				return "Book removed successfully";
+			} else {
+				return "Could not remove book";
+			}
+		}
 		return null;
 	}
 }
