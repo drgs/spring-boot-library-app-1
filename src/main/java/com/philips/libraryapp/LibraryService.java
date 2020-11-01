@@ -63,9 +63,6 @@ public class LibraryService {
 		 	bookList.remove(bookName);
 			return "Book removed successfully";
 			}
-		 else {
-	                return "Could not remove book";
-		 }
-		return null;
+		 return "Could not remove book";
 	}
 }
