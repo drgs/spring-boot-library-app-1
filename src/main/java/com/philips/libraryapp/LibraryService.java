@@ -24,9 +24,6 @@ public class LibraryService {
 		return "Book with title" + bookName + "has been added";		
 	}
 
-//	public String checkStringEqualsFoo(String inputString) {
-//		return inputString.equals("foo") ? 
-//				"Input string matches foo" : 
 //					"Input string does not match foo";
 //	}
 
