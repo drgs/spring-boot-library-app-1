@@ -48,7 +48,6 @@ public class LibraryService {
 	}
 
 	public String removeBook(String bookName) {
-        boolean bookType;
 
         if (bookList.size() > 0) {
             boolean removed = bookList.remove(bookName);
