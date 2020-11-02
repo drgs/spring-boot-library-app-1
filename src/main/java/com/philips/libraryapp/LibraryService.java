@@ -10,7 +10,7 @@ public class LibraryService {
 	private List<String> bookList = new ArrayList<>();
 
 	@SuppressWarnings({"java:S1104"})
-	public static ActionLogger actionLogger = new ActionLogger();
+	public static final ActionLogger actionLogger = new ActionLogger();
 
 	public String addBook(String bookName) {
 		int bookNumOfPages;
