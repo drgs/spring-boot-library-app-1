@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class LibraryService {
 	private List<String> bookList = new ArrayList<>();
-	
+
 	@SuppressWarnings({"java:S1104"})
 	public static ActionLogger actionLogger = new ActionLogger();
-	
+
 	public String addBook(String bookName) {
 		int bookNumOfPages;
 		boolean bookIsNonfiction, languageIsEnglish;
@@ -39,7 +39,7 @@ public class LibraryService {
 //					"Input string does not match foo";
 //	}
 //	
-	
+
 	public List<String> getAllBooks() {
 		if (bookList.size() > 0) {
 			return bookList;
@@ -52,10 +52,11 @@ public class LibraryService {
 		 * TODO: IMPLEMENT THIS
 		 * 
 		 * Requirements:
-		 * 1. Delete the book given as parameter (bookName) iff bookList has size > 0. Use the method bookList.size()
-		 * 2. Add a local variable of type boolean and name it "bookRemoved". This variable will remain temporarily unused.
-		 * 2. If the book is deleted, return the string "Book removed successfully"
-		 * 3. if the book is not deleted, return the string "Could not remove book"
+		 * 1. Add a local variable of type boolean and name it "bookType". This variable will remain unused for now.
+		 * 2. Remove the book given as parameter (bookName) from bookList iff bookList has size > 0. Use the method bookList.size().
+		 * 		NOTE: You can use the List.remove() method, which returns a boolean if removal is successful.
+		 * 3. If the book is successfully removed, return the string "Book removed successfully".
+		 * 4. If the book is not removed, return the string "Could not remove book".
 		 */
 		return null;
 	}
