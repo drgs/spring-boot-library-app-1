@@ -61,7 +61,8 @@ public class LibraryService {
 		boolean bookType;
 		
 		if (bookList.size() > 0) {
-			if (bookList.remove(bookName)) {
+			boolean bookRemoved = bookList.remove(bookName);
+			if (bookRemoved) {
 				return "Book removed successfully";	
 			}
 		}
