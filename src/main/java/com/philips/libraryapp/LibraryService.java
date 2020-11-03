@@ -28,7 +28,7 @@ public class LibraryService {
 //	
  
 	public List<String> getAllBooks() {
-		if (bookList.size() > 0) {
+		if (bookList.isEmpty()) {
 			return bookList;
 		}
 		return new ArrayList<>();
