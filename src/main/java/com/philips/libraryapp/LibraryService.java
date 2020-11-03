@@ -58,6 +58,7 @@ public class LibraryService {
 		 * 3. If the book is successfully removed, return the string "Book removed successfully".
 		 * 4. If the book is not removed, return the string "Could not remove book".
 		 */
+		boolean var;
 		return null;
 	}
 }
