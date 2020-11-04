@@ -25,9 +25,6 @@ public class LibraryService {
 	}
 
 
-//	public String checkStringEqualsFoo(String inputString) {
-//		return inputString.equals("foo") ? 
-//				"Input string matches foo" : 
 //					"Input string does not match foo";
 //	}
 //	
