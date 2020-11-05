@@ -50,7 +50,7 @@ public class LibraryService {
 	public String removeBook(String bookName) {
 
 
-		if (bookList.size() > 0 && bookList.remove(bookName)) {
+		if (!bookList.isEmpty() && bookList.remove(bookName)) {
 			return "Book removed successfully";
 		}
 		/*
