@@ -59,7 +59,7 @@ public class LibraryService {
 		 * 4. If the book is not removed, return the string "Could not remove book".
 		 */
 		
-		if (bookList.size() > 0) {
+		if (!bookList.isEmpty()) {
 			boolean bookRemoved = bookList.remove(bookName);
 			if (bookRemoved) {
 				return "Book removed successfully";	
