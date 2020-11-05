@@ -48,6 +48,12 @@ public class LibraryService {
 	}
 
 	public String removeBook(String bookName) {
+
+		boolean bookType;
+
+		if (bookList.size() > 0 && bookList.remove(bookName)) {
+			return "Book removed successfully";
+		}
 		/*
 		 * TODO: IMPLEMENT THIS
 		 * 
@@ -58,6 +64,6 @@ public class LibraryService {
 		 * 3. If the book is successfully removed, return the string "Book removed successfully".
 		 * 4. If the book is not removed, return the string "Could not remove book".
 		 */
-		return null;
+		return "Could not remove book";
 	}
 }
