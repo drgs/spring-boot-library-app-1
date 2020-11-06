@@ -48,16 +48,26 @@ public class LibraryService {
 	}
 
 	public String removeBook(String bookName) {
-		/*
-		 * TODO: IMPLEMENT THIS
-		 * 
-		 * Requirements:
-		 * 1. Add a local variable of type boolean and name it "bookType". This variable will remain unused for now.
-		 * 2. Remove the book given as parameter (bookName) from bookList iff bookList has size > 0. Use the method bookList.size().
-		 * 		NOTE: You can use the List.remove() method, which returns a boolean if removal is successful.
-		 * 3. If the book is successfully removed, return the string "Book removed successfully".
-		 * 4. If the book is not removed, return the string "Could not remove book".
-		 */
-		return null;
+        /*
+         * TODO: IMPLEMENT THIS
+         *
+         * Requirements:
+         * 1. Add a local variable of type boolean and name it "bookType". This variable will remain unused for now.
+         * 2. Remove the book given as parameter (bookName) from bookList iff bookList has size > 0. Use the method bookList.size().
+         * 		NOTE: You can use the List.remove() method, which returns a boolean if removal is successful.
+         * 3. If the book is successfully removed, return the string "Book removed successfully".
+         * 4. If the book is not removed, return the string "Could not remove book".
+         */
+        boolean bookType;
+
+        if (bookList.size() > 0) {
+            if (bookList.remove(bookName)) {
+                return "Book removed successfully";
+            } else {
+                return "Could not remove book";
+            }
+        }
+
+        return null;
 	}
 }
