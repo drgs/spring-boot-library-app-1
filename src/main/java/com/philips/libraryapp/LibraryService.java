@@ -13,7 +13,6 @@ public class LibraryService {
 	public static final ActionLogger actionLogger = new ActionLogger();
 
 	public String addBook(String bookName) {
-		String isbn  = "";
 
 		actionLogger.log("Adding book: " + bookName);
 
